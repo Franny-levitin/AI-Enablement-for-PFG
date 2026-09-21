@@ -1,0 +1,611 @@
+<title>Learning Hub Wireframe — Learning & Resources</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../style.css">
+
+<div id="view-learn">
+
+  <div class="intro" id="top">
+    <div class="intro-card">
+      <h1>AI Learning Hub — Learning & Resources Page — Wireframe</h1>
+      <p>Grayscale, non-interactive wireframe of the Topics entry point, native SharePoint web parts identified by the dashed-line annotations. Use the <a href="#ds-components" data-nav="ds">DS Components</a> link below for the Topics layout options.</p>
+      <div class="project-docs">
+        <span class="project-docs-label">Project documents</span>
+        <a href="sitemap.html" class="back-link">Sitemap &rarr;</a>
+        <a href="#ds-components" data-nav="ds" class="back-link">DS Components &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroller">
+    <div class="frame">
+<div class="wireframe-shell">
+  <div class="plan-margin">
+    <div class="plan-note" data-for="wp-header"><span class="note-text">SharePoint site header (standard)</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-hero"><span class="note-text">Hero web part &mdash; personalized for Dead-end Dora, priority persona</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-quicklinks"><span class="note-text">Quick Links web part</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-topics-grid"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: topic</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-topics-grid-workflow"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: workflow</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-topics-grid-2"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: tool</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-topics-grid-3"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: agent</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-topics-grid-4"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: community</span><span class="leader"></span></div>
+    <div class="plan-note" data-for="wp-builder"><span class="note-text">Highlighted Content web part &mdash; single item, tag: builder-mode</span><span class="leader"></span></div>
+  </div>
+  <div class="device">
+    <div class="device-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    <div class="wf-1">
+
+  <!-- SITE HEADER -->
+  <div id="wp-header" class="wf-2">
+    <div class="wf-143">
+      <div class="wf-144" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="4" cy="4" r="1.6"></circle><circle cx="12" cy="4" r="1.6"></circle><circle cx="20" cy="4" r="1.6"></circle><circle cx="4" cy="12" r="1.6"></circle><circle cx="12" cy="12" r="1.6"></circle><circle cx="20" cy="12" r="1.6"></circle><circle cx="4" cy="20" r="1.6"></circle><circle cx="12" cy="20" r="1.6"></circle><circle cx="20" cy="20" r="1.6"></circle></svg></div>
+      <div class="wf-145" aria-hidden="true"></div>
+      <div class="wf-146">Principal</div>
+      <div class="wf-147">SharePoint</div>
+      <div class="wf-148">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <div class="wf-149">Search this site</div>
+      </div>
+      <div class="wf-150">
+        <div class="wf-151" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4a1 1 0 001 1h2l6 4V5L6 9H4a1 1 0 00-1 1z"></path><path d="M15 8a4 4 0 010 8"></path></svg></div>
+        <div class="wf-151" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a1 1 0 011 1v10a1 1 0 01-1 1H9l-4 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"></path><circle cx="12" cy="9" r="1.6"></circle><path d="M9 14c0-1.8 1.4-3 3-3s3 1.2 3 3"></path></svg></div>
+        <div class="wf-151" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"></path></svg></div>
+        <div class="wf-151" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 114.2 1.8c-.7.7-1.7 1.1-1.7 2.2"></path><line x1="12" y1="16.5" x2="12" y2="16.6"></line></svg></div>
+      </div>
+      <div class="wf-152">JD</div>
+    </div>
+    <div class="wf-3">
+      <div class="wf-4">
+        <div class="wf-5"></div>
+        <div class="wf-6">AI Enablement Hub</div>
+      </div>
+      <div class="wf-154"></div>
+      <div class="wf-153">
+        <div class="wf-7">
+          <a href="../index-wireframe.html" class="wf-9">Home</a>
+          <div class="wf-8">Learning & Resources</div>
+          <a href="stories.html" class="wf-9">Use Cases</a>
+          <div class="wf-10">Governance</div>
+          <div class="wf-10">News & Events</div>
+        </div>
+        <div class="wf-155">
+          <div class="wf-156">Public group</div>
+          <div class="wf-157"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.2.6-4.6 4.2 1.3 6.1L12 16.9 6.5 19.5l1.3-6.1L3.2 9.2l6.2-.6z"></path></svg><span>Add to favorites</span></div>
+          <div class="wf-158"><span>English</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></div>
+          <div class="wf-159"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span>2,647 members</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="wf-13">
+    <div id="wp-hero" class="webpart wf-14">
+      <div class="wf-138">
+        <div class="wf-15">Your next learning adventure starts here</div>
+        <div class="bar wf-16"></div>
+        <div class="bar wf-17"></div>
+        <div class="wf-18">
+          <div class="wf-20">
+            <div class="btn">
+              Start AI Bingo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </div>
+            <!-- <div class="btn-outline">Browse Learning Topics</div> -->
+          </div>
+        </div>
+      </div>
+      <div class="wf-139" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9a978a" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="m4 17 5-5 4 4 3-3 4 4"></path></svg>
+        <div class="wf-140">Hero image</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK LINKS -->
+  <div class="wf-21">
+    <div id="wp-quicklinks" class="webpart wf-22">
+      <div class="wf-23">
+
+        <div class="wf-24">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.8"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5"></path><line x1="12" y1="16.5" x2="12" y2="16.5"></line></svg>
+          <div class="wf-25">Which tool should I use?</div>
+          <div class="bar wf-26"></div>
+        </div>
+
+        <div class="wf-24">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.7.7 1 1.3 1 2.5h6c0-1.2.3-1.8 1-2.5A6 6 0 0 0 12 2Z"></path></svg>
+          <div class="wf-25">Have an idea? Get build help</div>
+          <div class="bar wf-26"></div>
+        </div>
+
+        <div class="wf-24">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5l-8-3Z"></path></svg>
+          <div class="wf-25">Governance &amp; access basics</div>
+          <div class="bar wf-26"></div>
+        </div>
+
+        <div class="wf-24">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.7 8.7 0 0 1-3.1-.6L3 21l1.8-5A8.4 8.4 0 0 1 12.5 3a8.4 8.4 0 0 1 8.5 8.5Z"></path></svg>
+          <div class="wf-25">Give feedback (private)</div>
+          <div class="bar wf-26"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPICS GRID -->
+  <div class="wf-21">
+    <div id="wp-topics-grid" class="webpart wf-59">
+      <div class="wf-141">
+        <div class="wf-56">AI Foundations</div>
+      </div>
+      <div class="wf-29">
+
+        <!-- Topic 1: recommended / Dora starting point -->
+        <div class="tile">
+          <div class="wf-25">Data and AI Literacy</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-65"></div>
+          <div class="wf-35">Published 09/01</div>
+        </div>
+
+        <!-- Topics 2-10 neutral -->
+        <div class="tile">
+          <div class="wf-25">AI Explained Podcast</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-70"></div>
+          <div class="wf-35">Published 08/22</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Prompting</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-70"></div>
+          <div class="wf-35">Published 08/22</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM WORKFLOWS GRID -->
+  <div class="wf-21">
+    <div id="wp-topics-grid-workflow" class="webpart wf-59">
+      <div class="wf-141">
+        <div class="wf-56">Team Workflows</div>
+      </div>
+      <div class="wf-29">
+
+        <div class="tile">
+          <div class="wf-25">Organize & Query Team Notes in Notebooks</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-70"></div>
+          <div class="wf-35">Published 09/01</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Co-Author a Shared Page with Copilot</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-72"></div>
+          <div class="wf-35">Published 08/22</div>
+        </div>
+
+       
+
+        <div class="tile">
+          <div class="wf-25">Ask Questions Across Your Team Site</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-74"></div>
+          <div class="wf-35">Published 08/05</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MORE TOPICS GRID -->
+  <div class="wf-21">
+    <div id="wp-topics-grid-2" class="webpart wf-59">
+      <div class="wf-141">
+        <div class="wf-56">Available tools</div>
+      </div>
+      <div class="wf-29">
+
+        <a href="../index-wireframe.html#top-topic" id="wp-learn-topic-start" class="tile">
+          <div class="wf-25">Start with Copilot Chat</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-72"></div>
+          <div class="wf-35">Published 08/22</div>
+        </a>
+
+        <div class="tile">
+          <div class="wf-25">Copilot Cowork</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-73"></div>
+          <div class="wf-35">Published 08/15</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Copilot in Microsoft 365 Apps</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-74"></div>
+          <div class="wf-35">Published 07/30</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Specialized Microsoft Agents</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-70"></div>
+          <div class="wf-35">Published 07/30</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Claude</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-72"></div>
+          <div class="wf-35">Published 07/12</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">ChatGPT</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-70"></div>
+          <div class="wf-35">Published 07/12</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">When To Use What?</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-72"></div>
+          <div class="wf-35">Published 06/28</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- AGENTS & AUTOMATION GRID -->
+  <div class="wf-21">
+    <div id="wp-topics-grid-3" class="webpart wf-59">
+      <div class="wf-141">
+        <div class="wf-56">Agents &amp; Automation</div>
+      </div>
+      <div class="wf-29">
+
+        <div class="tile">
+          <div class="wf-25">1 - Start with Agents</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-72"></div>
+          <div class="wf-35">Published 08/22</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">AI Automations</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-73"></div>
+          <div class="wf-35">Published 08/15</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">AI Assistants</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-74"></div>
+          <div class="wf-35">Published 07/30</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Advanced Skills</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-70"></div>
+          <div class="wf-35">Published 07/12</div>
+        </div>
+
+         <div class="tile">
+          <div class="wf-25">Build a Custom Agent in Copilot Studio</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-73"></div>
+          <div class="wf-35">Published 08/15</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- AI COMMUNITIES GRID -->
+  <div class="wf-21">
+    <div id="wp-topics-grid-4" class="webpart wf-59">
+      <div class="wf-141">
+        <div class="wf-56">AI Communities</div>
+      </div>
+      <div class="wf-29">
+
+        <div class="tile">
+          <div class="wf-25">AI Champions Network</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-72"></div>
+          <div class="wf-35">Published 08/22</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Viva Engage Community</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-73"></div>
+          <div class="wf-35">Published 08/15</div>
+        </div>
+
+        <div class="tile">
+          <div class="wf-25">Monthly Office Hours</div>
+          <div class="bar wf-33"></div>
+          <div class="bar wf-74"></div>
+          <div class="wf-35">Published 07/30</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- BUILDER MODE CALLOUT -->
+  <div class="wf-21">
+    <div id="wp-builder" class="webpart wf-76">
+      <div class="wf-77">
+        <div class="wf-78">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.7.7 1 1.3 1 2.5h6c0-1.2.3-1.8 1-2.5A6 6 0 0 0 12 2Z"></path></svg>
+        </div>
+        <div class="wf-79">
+          <div class="wf-80">Already have a specific idea in mind?</div>
+          <div class="bar wf-81"></div>
+        </div>
+      </div>
+      <div class="btn-outline wf-82">Get a feasibility answer</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="wf-50">
+    <div class="wf-51">
+      <div class="wf-52">Page owner: [name] · Last reviewed: [date]</div>
+      <div class="wf-77">
+        <div class="wf-53">Give private feedback on this page</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+
+</div>
+
+<div id="view-ds" class="wf-54">
+
+  <div class="intro wf-83" id="ds-components">
+    <a href="#top" data-nav="learn" class="back-link">&larr; Back to Learning & Resources page wireframe</a>
+    <h1>DS Components — Topics Layout Options</h1>
+    <p>Layout options explored for the Topics section. Not part of the Learning & Resources page itself &mdash; for comparison only.</p>
+  </div>
+
+  <div class="scroller wf-84">
+    <div class="frame">
+<!-- ============================================================ -->
+<!-- OPTION A: GRID CARDS -->
+<!-- ============================================================ -->
+<div class="wf-85">
+  <div class="option-caption">Option A — Grid cards <span class="option-sub">(current layout, relabeled)</span></div>
+</div>
+<section class="block">
+  <div class="wireframe-shell">
+    <div class="plan-margin">
+      <div class="plan-note" data-for="wp-optA"><span class="note-text">Highlighted Content web part &mdash; grid layout, filtered by tag: topic</span><span class="leader"></span></div>
+    </div>
+    <div class="device">
+      <div class="device-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <div class="wf-86">
+  <div class="wf-87">
+    <div class="wf-56">Topics</div>
+    <div class="bar wf-57"></div>
+  </div>
+  <div id="wp-optA" class="webpart wf-59">
+    <div class="wf-29">
+      <div class="tile wf-60">
+        <div class="wf-31">Recommended start</div>
+        <div class="num wf-32">1</div>
+        <div class="wf-25">Start with Copilot</div>
+        <div class="bar wf-33"></div>
+        <div class="pill wf-34">AI Bingo · Emerging</div>
+        <div class="wf-35">Published 09/01</div>
+      </div>
+      <div class="tile"><div class="num wf-36">2</div><div class="bar wf-69"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 08/22</div></div>
+      <div class="tile"><div class="num wf-36">3</div><div class="bar wf-71"></div><div class="bar wf-33"></div><div class="pill">Reference card</div><div class="wf-35">Published 08/22</div></div>
+      <div class="tile"><div class="num wf-36">4</div><div class="bar wf-38"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 08/15</div></div>
+      <div class="tile"><div class="num wf-36">5</div><div class="bar wf-39"></div><div class="bar wf-33"></div><div class="pill">Recording + recap</div><div class="wf-35">Published 07/30</div></div>
+      <div class="tile"><div class="num wf-36">6</div><div class="bar wf-40"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 07/30</div></div>
+      <div class="tile"><div class="num wf-36">7</div><div class="bar wf-41"></div><div class="bar wf-33"></div><div class="pill">Reference card</div><div class="wf-35">Published 07/12</div></div>
+      <div class="tile"><div class="num wf-36">8</div><div class="bar wf-42"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 07/12</div></div>
+      <div class="tile"><div class="num wf-36">9</div><div class="bar wf-43"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 06/28</div></div>
+      <div class="tile"><div class="num wf-36">10</div><div class="bar wf-44"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 06/28</div></div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="wf-88">Trade-off: strong visual scan, but 10 equal-weight cards can overwhelm someone who doesn't know where to start — the recommended-start card has to carry all the weight of standing out.</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- OPTION B: COMPACT LIST -->
+<!-- ============================================================ -->
+<div class="wf-89">
+  <div class="option-caption">Option B — Compact list <span class="option-sub">(scan by title, less visual weight per row)</span></div>
+</div>
+<section class="block">
+  <div class="wireframe-shell">
+    <div class="plan-margin">
+      <div class="plan-note" data-for="wp-optB"><span class="note-text">Highlighted Content web part &mdash; list layout, filtered by tag: topic</span><span class="leader"></span></div>
+    </div>
+    <div class="device">
+      <div class="device-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <div class="wf-86">
+  <div class="wf-87">
+    <div class="wf-56">Topics</div>
+    <div class="bar wf-57"></div>
+  </div>
+  <div id="wp-optB" class="webpart wf-90">
+    <div class="wf-91">
+      <div class="row wf-92">
+        <div class="num wf-93">1</div>
+        <div class="wf-94">
+          <div class="wf-95">
+            <div class="wf-47">Start with Copilot</div>
+            <div class="pill wf-96">Recommended start</div>
+          </div>
+          <div class="bar wf-97"></div>
+        </div>
+        <div class="pill">AI Bingo · Emerging</div>
+        <div class="wf-98">Published 09/01</div>
+      </div>
+      <div class="row"><div class="num wf-99">2</div><div class="wf-94"><div class="bar wf-100"></div><div class="bar wf-97"></div></div><div class="pill">Guide</div><div class="wf-98">Published 08/22</div></div>
+      <div class="row"><div class="num wf-99">3</div><div class="wf-94"><div class="bar wf-101"></div><div class="bar wf-97"></div></div><div class="pill">Reference card</div><div class="wf-98">Published 08/22</div></div>
+      <div class="row"><div class="num wf-99">4</div><div class="wf-94"><div class="bar wf-102"></div><div class="bar wf-97"></div></div><div class="pill">Guide</div><div class="wf-98">Published 08/15</div></div>
+      <div class="row"><div class="num wf-99">5</div><div class="wf-94"><div class="bar wf-103"></div><div class="bar wf-97"></div></div><div class="pill">Recording + recap</div><div class="wf-98">Published 07/30</div></div>
+      <div class="row"><div class="num wf-99">6</div><div class="wf-94"><div class="bar wf-104"></div><div class="bar wf-97"></div></div><div class="pill">Guide</div><div class="wf-98">Published 07/30</div></div>
+      <div class="row"><div class="num wf-99">7</div><div class="wf-94"><div class="bar wf-105"></div><div class="bar wf-97"></div></div><div class="pill">Reference card</div><div class="wf-98">Published 07/12</div></div>
+      <div class="row"><div class="num wf-99">8</div><div class="wf-94"><div class="bar wf-106"></div><div class="bar wf-97"></div></div><div class="pill">Guide</div><div class="wf-98">Published 07/12</div></div>
+      <div class="row"><div class="num wf-99">9</div><div class="wf-94"><div class="bar wf-107"></div><div class="bar wf-97"></div></div><div class="pill">Guide</div><div class="wf-98">Published 06/28</div></div>
+      <div class="row"><div class="num wf-99">10</div><div class="wf-94"><div class="bar wf-108"></div><div class="bar wf-97"></div></div><div class="pill">Guide</div><div class="wf-98">Published 06/28</div></div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="wf-88">Trade-off: denser and faster to scan top-to-bottom, and the recommended row can sit first with a clear border, but it reads more like a document list than an inviting starting point — better suited to someone who already knows roughly what they want (Patty, Ryan) than someone who needs to be pulled in.</div>
+</section>
+
+<!-- ============================================================ -->
+<!-- OPTION C: GROUPED BY STAGE -->
+<!-- ============================================================ -->
+<div class="wf-89">
+  <div class="option-caption">Option C — Grouped by stage <span class="option-sub">(reflects the efficiency → effectiveness → OP-model arc)</span></div>
+</div>
+<section class="block">
+  <div class="wireframe-shell">
+    <div class="plan-margin">
+      <div class="plan-note" data-for="wp-optC-label"><span class="note-text">Text web part &mdash; stage label</span><span class="leader"></span></div>
+      <div class="plan-note" data-for="wp-optC-grid1"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: topic, stage: getting-started</span><span class="leader"></span></div>
+      <div class="plan-note" data-for="wp-optC-grid2"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: topic, stage: automating-agents</span><span class="leader"></span></div>
+      <div class="plan-note" data-for="wp-optC-grid3"><span class="note-text">Highlighted Content web part &mdash; filtered by tag: topic, stage: scale-governance</span><span class="leader"></span></div>
+    </div>
+    <div class="device">
+      <div class="device-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <div class="wf-86">
+  <div class="wf-87">
+    <div class="wf-56">Topics</div>
+    <div class="bar wf-57"></div>
+  </div>
+
+  <div id="wp-optC-label" class="wf-109">
+    <div class="wf-95">
+      <div class="wf-110">Getting started</div>
+      <div class="pill">Personal productivity</div>
+    </div>
+  </div>
+  <div id="wp-optC-grid1" class="webpart wf-111">
+    <div class="wf-23">
+      <div class="tile wf-60">
+        <div class="wf-31">Recommended start</div>
+        <div class="num wf-32">1</div>
+        <div class="wf-25">Start with Copilot</div>
+        <div class="bar wf-33"></div>
+        <div class="pill wf-34">AI Bingo · Emerging</div>
+        <div class="wf-35">Published 09/01</div>
+      </div>
+      <div class="tile"><div class="num wf-36">2</div><div class="bar wf-69"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 08/22</div></div>
+      <div class="tile"><div class="num wf-36">3</div><div class="bar wf-71"></div><div class="bar wf-33"></div><div class="pill">Reference card</div><div class="wf-35">Published 08/22</div></div>
+      <div class="tile"><div class="num wf-36">4</div><div class="bar wf-38"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 08/15</div></div>
+    </div>
+  </div>
+
+  <div class="wf-112">
+    <div class="wf-110">Automating &amp; agents</div>
+    <div class="pill">Team &amp; process change</div>
+  </div>
+  <div id="wp-optC-grid2" class="webpart wf-113">
+    <div class="wf-23">
+      <div class="tile"><div class="num wf-36">5</div><div class="bar wf-39"></div><div class="bar wf-33"></div><div class="pill">Recording + recap</div><div class="wf-35">Published 07/30</div></div>
+      <div class="tile"><div class="num wf-36">6</div><div class="bar wf-40"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 07/30</div></div>
+      <div class="tile"><div class="num wf-36">7</div><div class="bar wf-41"></div><div class="bar wf-33"></div><div class="pill">Reference card</div><div class="wf-35">Published 07/12</div></div>
+    </div>
+  </div>
+
+  <div class="wf-112">
+    <div class="wf-110">Scale &amp; governance</div>
+    <div class="pill">Operating-model change</div>
+  </div>
+  <div id="wp-optC-grid3" class="webpart wf-114">
+    <div class="wf-23">
+      <div class="tile"><div class="num wf-36">8</div><div class="bar wf-42"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 07/12</div></div>
+      <div class="tile"><div class="num wf-36">9</div><div class="bar wf-43"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 06/28</div></div>
+      <div class="tile"><div class="num wf-36">10</div><div class="bar wf-44"></div><div class="bar wf-33"></div><div class="pill">Guide</div><div class="wf-35">Published 06/28</div></div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="wf-88">Trade-off: gives the "where am I in this journey" narrative from Section 3a a home on the page itself, but it needs three separate Highlighted Content web parts (one per stage tag) instead of one, and depends on a "stage" tag that isn't in the current tagging plan (Section 7, item 4) — would need to be added.</div>
+</section>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var views = {
+    learn: document.getElementById('view-learn'),
+    ds: document.getElementById('view-ds')
+  };
+
+  function showView(id) {
+    Object.keys(views).forEach(function (key) {
+      if (views[key]) views[key].style.display = (key === id) ? 'block' : 'none';
+    });
+    window.scrollTo(0, 0);
+    positionNotes();
+  }
+
+  function positionNotes() {
+    document.querySelectorAll('.plan-margin').forEach(function (margin) {
+      var marginRect = margin.getBoundingClientRect();
+      margin.querySelectorAll('.plan-note').forEach(function (note) {
+        var target = document.getElementById(note.getAttribute('data-for'));
+        if (!target) return;
+        var targetRect = target.getBoundingClientRect();
+        note.style.top = (targetRect.top - marginRect.top) + 'px';
+        var leader = note.querySelector('.leader');
+        if (leader) {
+          var reach = targetRect.left - marginRect.right;
+          leader.style.width = Math.max(reach, 0) + 'px';
+        }
+      });
+    });
+  }
+
+  document.querySelectorAll('[data-nav]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      showView(link.getAttribute('data-nav'));
+    });
+  });
+
+  positionNotes();
+  window.addEventListener('resize', positionNotes);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(positionNotes);
+  }
+  if (window.location.hash === '#ds-components') {
+    showView('ds');
+  }
+})();
+</script>
