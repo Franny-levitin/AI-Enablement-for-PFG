@@ -4,15 +4,13 @@
 
 <div id="view-ai-tools">
 
-  <div class="intro" id="top">
+  <div class="intro intro-full" id="top">
     <div class="intro-card">
-      <a href="../index-wireframe.html" class="back-link">&larr; Back to Homepage wireframe</a>
       <h1>AI Learning Hub — AI Tools — Wireframe</h1>
-      <p>Grayscale, non-interactive wireframe of the Available AI Tools page (prototype). Grouped by product surface (Copilot Chat, Copilot Cowork, Copilot in Microsoft 365 Apps) rather than by stage &mdash; this content is a reference catalog, not a skill progression, so the Option C stage-grouping used on the Copilot topic page doesn't apply here.</p>
       <div class="project-docs">
-        <span class="project-docs-label">Project documents</span>
-        <a href="sitemap.html" class="back-link">Sitemap &rarr;</a>
-        <a href="learn.html#ds-components" class="back-link">DS Components &rarr;</a>
+        <a href="../index-wireframe.html" class="back-link">Home</a>
+        <a href="../sitemap.html" class="back-link">Sitemap</a>
+        <a href="../ds-components.html" class="back-link">DS Components</a>
       </div>
     </div>
   </div>
@@ -60,9 +58,10 @@
         <div class="wf-7">
           <a href="../index-wireframe.html" class="wf-9">Home</a>
           <a href="learn.html" class="wf-9">Learning & Resources</a>
-          <a href="stories.html" class="wf-9">Use Cases</a>
+          <a href="use-cases.html" class="wf-9">Use Cases</a>
           <div class="wf-10">Tools</div>
           <div class="wf-10">Governance</div>
+          <div class="wf-10">Contact Us</div>
         </div>
         <div class="wf-155">
           <div class="wf-156">Public group</div>
@@ -188,10 +187,20 @@
     });
   }
 
+  function syncIntroFull() {
+    var intro = document.querySelector('.intro-full');
+    var scroller = document.querySelector('#view-ai-tools .scroller');
+    if (!intro || !scroller) return;
+    scroller.style.marginTop = intro.getBoundingClientRect().height + 'px';
+  }
+
   positionNotes();
+  syncIntroFull();
   window.addEventListener('resize', positionNotes);
+  window.addEventListener('resize', syncIntroFull);
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(positionNotes);
+    document.fonts.ready.then(syncIntroFull);
   }
 })();
 </script>

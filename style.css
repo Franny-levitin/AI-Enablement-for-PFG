@@ -21,7 +21,7 @@ body {
   font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
   padding-block: 32px;
 }
-#view-landing, #view-topic, #view-learn, #view-ds, #view-stories, #view-ai-tools {
+#view-landing, #view-topic, #view-learn, #view-ds, #view-use-cases, #view-ai-tools {
   width: max-content;
   margin: 0 auto;
 }
@@ -43,6 +43,43 @@ body {
   margin: 0;
 }
 .intro a { color: var(--ink); text-decoration: underline; }
+.intro-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  background: var(--card-bg);
+  z-index: 1;
+}
+.intro-full .intro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  background: none;
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 20px;
+  gap: 10px;
+}
+.intro-full .intro-card h1 {
+  font-size: 15px;
+}
+.intro-full .intro-card p {
+  font-size: 12px;
+}
+.intro-full .intro-card .project-docs {
+  margin-top: 2px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+}
 .intro-card {
   display: flex; flex-direction: column; gap: 10px;
   border: 1px solid var(--card-border); border-radius: 10px; background: var(--card-bg);
@@ -55,6 +92,7 @@ body {
 .scroller {
   overflow-x: auto;
   padding: 0 16px;
+  width: max-content;
 }
 .frame {
   width: max-content;
@@ -170,6 +208,11 @@ a[data-nav], a[href="#top"] { color: var(--ink); cursor: pointer; }
   text-decoration: none; margin: 0 16px 4px 0;
 }
 .back-link:hover { color: var(--ink); }
+.back-link[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: underline;
+}
 
 .project-docs {
   display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap;
@@ -179,7 +222,8 @@ a[data-nav], a[href="#top"] { color: var(--ink); cursor: pointer; }
 .project-docs-label {
   font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-faint);
 }
-.project-docs .back-link { margin: 0; }
+.project-docs .back-link { margin: 0; text-decoration: none; }
+.project-docs .back-link[aria-current="page"] { text-decoration: underline; }
 
 /* --- extracted inline styles --- */
 .wf-1 { width:1440px; background:#e8e8e8; display:flex; flex-direction:column; }
@@ -217,7 +261,7 @@ a.wf-9 { color:#ddd; font-size:13px; font-weight:600; text-decoration:none; }
 .wf-13 { padding:40px 64px 0 64px; }
 .wf-14 { padding:56px 64px; display:flex; flex-direction:column; align-items:flex-start; gap:16px; }
 #wp-hero.wf-14, #wp-landing-hero.wf-14 { flex-direction:row; align-items:stretch; justify-content:space-between; gap:40px; }
-#wp-stories-hero.wf-115 { flex-direction:row; align-items:stretch; justify-content:space-between; gap:40px; }
+#wp-use-cases-hero.wf-115 { flex-direction:row; align-items:stretch; justify-content:space-between; gap:40px; }
 .wf-138 { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:16px; flex:1 1 50%; }
 .wf-139 {
   flex:0 0 50%; border:1px dashed var(--card-border); border-radius:8px;

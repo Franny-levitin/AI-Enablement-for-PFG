@@ -1,11 +1,12 @@
 <title>AI Learning Hub — Sitemap</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=IBM+Plex+Mono:wght@500&display=swap">
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
 
-<div class="intro" id="top">
-  <a href="../index-wireframe.html" class="back-link">&larr; Back to Homepage wireframe</a>
-  <h1>AI Learning Hub — Sitemap</h1>
-  <p>Information architecture reference for the AI Learning Hub site &mdash; a UX deliverable documenting the page hierarchy. This is not a page within the site itself.</p>
+<div class="intro intro-full" id="top">
+  <div class="intro-card">
+    <a href="index-wireframe.html" class="back-link">&larr; Back to Homepage wireframe</a>
+    <h1>AI Learning Hub — Sitemap</h1>
+  </div>
 </div>
 
 <div class="sitemap-diagram">
@@ -26,8 +27,25 @@
         <li><div class="sm-row"><span class="sm-node">AI Tools</span></div></li>
             <li><div class="sm-row"><span class="sm-node sm-planned">Governance <em>(planned)</em></span></div></li>
         <li><div class="sm-row"><span class="sm-node sm-planned">News &amp; Events <em>(planned)</em></span></div></li>
+        <li><div class="sm-row"><span class="sm-node sm-planned">Contact Us <em>(planned)</em></span></div></li>
       </ul>
     </li>
   </ul>
 </div>
 
+<script>
+(function () {
+  function syncIntroFull() {
+    var intro = document.querySelector('.intro-full');
+    var diagram = document.querySelector('.sitemap-diagram');
+    if (!intro || !diagram) return;
+    diagram.style.marginTop = intro.getBoundingClientRect().height + 'px';
+  }
+
+  syncIntroFull();
+  window.addEventListener('resize', syncIntroFull);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(syncIntroFull);
+  }
+})();
+</script>
